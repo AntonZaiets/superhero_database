@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/build/
+
+# Generated files
+*.min.js
+
+# Coverage
+coverage/
+
+# Cache
+.cache/
+.vite/
+
+# Config files that might have different linting rules
+*.config.js
+vite.config.js
+.prettierrc
+

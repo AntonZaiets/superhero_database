@@ -1,0 +1,32 @@
+{
+  "name": "superhero-database",
+  "version": "1.0.0",
+  "description": "A superhero database web application with CRUD operations",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "test": "cd frontend && npm run test:run",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:frontend": "eslint frontend --ext .js,.jsx,.ts,.tsx",
+    "lint:backend": "eslint backend --ext .js",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.6.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}
