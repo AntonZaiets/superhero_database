@@ -1,4 +1,4 @@
-# Superhero Database / База Даних Супергероїв
+# Superhero Database
 
 A full-stack web application for managing a superhero database with CRUD operations, image management, and modern UI.
 
@@ -129,7 +129,7 @@ npm run format:check        # Check code formatting
 ### Run Frontend Tests (Configured)
 
 ```bash
-npm run test               # Run frontend tests once from root
+npm run test                     # Run frontend tests once from root
 cd frontend && npm run test:run  # Run frontend tests once
 cd frontend && npm run test      # Run frontend tests in watch mode
 cd frontend && npm run test:ui   # Run tests with Vitest UI
